@@ -1,12 +1,12 @@
 # Pequeno banco de dados
-Este projeto é um projeto de estudo de bancos de dados utilizando as tecnologias: Python, Docker, SQL,  PostgreSQL, Pandas, Dbeaver, csv e xlsx.
+Este projeto é um projeto de **estudo** de bancos de dados utilizando as tecnologias: **Python, Docker, SQL,  PostgreSQL, Pandas, Dbeaver, csv e xlsx**.
 
 O objetivo é bem simples. Alimentar o banco de dados com arquivos .CSV e .XLSX, e poder fazer consultas em SQL.
 
 Aqui temos um exemplo de arquivo xlsx a ser enviado para o banco. <br>
 ![planilha](https://i.imgur.com/6JbD7LR.png) <br>
 
-Primeiramente devemos ligar o banco utilizando postgreSQL em docker <br>
+Primeiramente devemos ligar o banco utilizando **PostgreSQL** em **Docker** <br>
 executa-se o comando:
 ```
 sudo docker run -e POSTGRES_PASSWORD=teste123 -p 5432:5432 postgres 
@@ -16,13 +16,13 @@ Tem-se então o output: <br>
 
 ![Docker](https://i.imgur.com/CjR6r4B.png)<br>
 
-Para acessar a interface gráfica do banco, utlizei o Dbeaver:<br>
+Para acessar a interface gráfica do banco, utlizei o **Dbeaver**:<br>
 
 ![Dbeaver](https://i.imgur.com/lNQrO4n.png)<br>
 
-Agora devemos alimentar o banco com o dados da planilha utilizando Pandas.<br>
+Agora devemos alimentar o banco com o dados da planilha utilizando **Pandas**.<br>
 
-Codigo Python utilizando a biblioteca pandas para o envio dos dados:
+Codigo **Python** utilizando a biblioteca **Pandas** para o envio dos dados:
 ```
 import pandas as pd
 from sqlalchemy import create_engine
@@ -43,7 +43,7 @@ Output:<br>
 Após isso, os dados devem aparecer no banco.<br>
 ![dados no banco](https://i.imgur.com/CmtVg2z.png)<br>
 
-Para consultar informações no banco, utilizaremos SQL:
+Para consultar informações no banco, utilizaremos **SQL**:
 ```
 select 
 "Nome" 
