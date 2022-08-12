@@ -7,7 +7,7 @@ Aqui temos um exemplo de arquivo xlsx a ser enviado para o banco. <br>
 ![planilha](https://i.imgur.com/6JbD7LR.png) <br>
 
 Primeiramente devemos ligar o banco utilizando **PostgreSQL** em **Docker** <br>
-executa-se o comando:
+executa-se o comando a seguir em um terminal linux pré-configurado:
 ```
 sudo docker run -e POSTGRES_PASSWORD=teste123 -p 5432:5432 postgres 
 ``` 
